@@ -1,0 +1,37 @@
+.css-1gh9j5w-MuiPaper-root-MuiDrawer-paper,
+.css-10rcyql-MuiPaper-root-MuiDrawer-paper {
+  /* position: relative !important; */
+  justify-content: center !important;
+  height: auto !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+.css-zxdg2z {
+  padding: 0 !important;
+}
+
+/* header fix with component main */
+
+/* side bar */
+.css-13n0ovi-MuiDrawer-docked,
+.css-1r7kheo-MuiDrawer-docked {
+  height: 609px;
+  /* background-color: #0058af; */
+}
+.css-13n0ovi-MuiDrawer-docked .MuiDrawer-paper,
+.css-1r7kheo-MuiDrawer-docked .MuiDrawer-paper {
+  /* background-color: #0058af; */
+  border: none !important;
+  justify-content: space-between !important;
+  /* padding-top: 8%; */
+}
+.css-h4y409-MuiList-root {
+  top: 11%;
+}
+
+/* search bar */
+.css-1wren4t-MuiInputBase-root {
+  background-color: #b3e5fc14;
+  border-radius: 7px;
+}
