@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import { Counter } from "./features/counter/Counter";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { createBrowserHistory, createHashHistory } from "history";
 import "./App.css";
 import Header from "./Header";
 import SideBar from "./component/SideBar/SideBar";
@@ -18,9 +19,11 @@ import Login from "./pages/Login/Login";
 import ProjectDetail from "./pages/Projects/ProjectDetail";
 import AddProject from "./pages/Projects/AddProject";
 
+const history = createHashHistory();
+
 function App() {
   return (
-    <HashRouter>
+    <HashRouter history={history}>
       <Routes>
         <Route path="/" element={<SideBar component={<Dashboard />} />} />
         <Route path="/users" element={<SideBar component={<Users />} />} />
