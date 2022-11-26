@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import { Counter } from "./features/counter/Counter";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import "./App.css";
 import Header from "./Header";
 import SideBar from "./component/SideBar/SideBar";
@@ -20,7 +20,7 @@ import AddProject from "./pages/Projects/AddProject";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<SideBar component={<Dashboard />} />} />
         <Route path="/users" element={<SideBar component={<Users />} />} />
@@ -46,7 +46,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
